@@ -73,6 +73,20 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
+a[href*="facebook.com"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36rem;
+}
+a[href*="facebook.com"]::before {
+  content: "";
+  width: 0.95em;
+  height: 0.95em;
+  display: inline-block;
+  background: url("../images/facebook-icon.svg") center/contain no-repeat;
+  flex: 0 0 auto;
+}
+
 /* Content list defaults (restore readable bullet indentation after reset) */
 main ul,
 main ol {
