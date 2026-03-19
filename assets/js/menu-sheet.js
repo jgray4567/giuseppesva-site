@@ -3,11 +3,50 @@
   const root = document.getElementById("sheet-menu-root");
   const status = document.getElementById("sheet-status");
 
+  function parseCSV(text) {
+    const rows = [];
+    let row = [];
+    let cell = "";
+    let inQuotes = false;
+
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i];
+      const next = text[i + 1];
+
+      if (ch === '"') {
+        if (inQuotes && next === '"') {
+          cell += '"';
+          i++;
+        } else {
+          inQuotes = !inQuotes;
+        }
+      } else if (ch === ',' && !inQuotes) {
+        row.push(cell.trim());
+        cell = "";
+      } else if ((ch === '\n' || ch === '\r') && !inQuotes) {
+        if (ch === '\r' && next === '\n') i++;
+        row.push(cell.trim());
+        if (row.some(v => v !== "")) rows.push(row);
+        row = [];
+        cell = "";
+      } else {
+        cell += ch;
+      }
+    }
+
+    if (cell.length || row.length) {
+      row.push(cell.trim());
+      if (row.some(v => v !== "")) rows.push(row);
+    }
+
+    return rows;
+  }
+
   function csvToRows(text) {
-    const lines = text.trim().split(/\r?\n/);
-    const headers = lines.shift().split(",").map(h => h.trim());
-    return lines.map(line => {
-      const cols = line.split(",");
+    const matrix = parseCSV(text.trim());
+    if (!matrix.length) return [];
+    const headers = matrix[0].map(h => h.trim().toLowerCase());
+    return matrix.slice(1).map(cols => {
       const o = {};
       headers.forEach((h, i) => (o[h] = (cols[i] || "").trim()));
       return o;
@@ -46,7 +85,7 @@
       items.forEach(item => {
         const li = document.createElement("li");
         li.className = "menu-item-row";
-        li.innerHTML = `<div><strong>${item.name || ""}</strong>${item.description ? `<div class="muted">${item.description}</div>` : ""}</div><div class="price">${item.price || ""}</div>`;
+        li.innerHTML = `<div><div class="item-name">${item.name || ""}</div>${item.description ? `<div class="muted">${item.description}</div>` : ""}</div><div class="price">${item.price || ""}</div>`;
         ul.appendChild(li);
       });
 
