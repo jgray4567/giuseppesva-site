@@ -160,9 +160,23 @@
       font-style: italic;
       font-size: 1.09rem;
       color: var(--parchment);
-      opacity: 0.65;
-      letter-spacing: 0.06em;
+      opacity: 0.75;
+      letter-spacing: 0.04em;
       animation: heroFadeUp 1.4s 0.5s cubic-bezier(.22,.8,.3,1) both;
+    }
+    .hero-location .hero-address {
+      display: block;
+    }
+    .hero-location .hero-phone {
+      display: block;
+      margin-top: 0.38rem;
+      font-family: var(--font-display);
+      font-style: normal;
+      font-size: 1.45rem;
+      letter-spacing: 0.08em;
+      color: var(--gold-light);
+      font-weight: 700;
+      line-height: 1.15;
     }
 
     .hero-actions {
