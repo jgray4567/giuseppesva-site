@@ -1,0 +1,58 @@
+.page-hero {
+      min-height: 52vh;
+      padding: 140px 2rem 70px;
+      background: linear-gradient(rgba(10,8,6,0.55), rgba(10,8,6,0.7)), url('../images/Gs_BrickBG001.jpg') center/cover no-repeat;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .page-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      font-style: italic;
+      font-weight: 700;
+      color: var(--cream);
+      line-height: 1.1;
+      letter-spacing: 0;
+      margin-bottom: 0.6rem;
+    }
+    .page-hero p {
+      max-width: 760px;
+      font-family: var(--font-fell);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--parchment);
+      opacity: 0.6;
+    }
+
+    .content-wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3rem 1.2rem 4rem;
+    }
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    .card {
+      background: #17130f;
+      border: 1px solid rgba(200,162,80,.18);
+      border-radius: 10px;
+      padding: 1.35rem 1.2rem;
+    }
+    h2 {
+      font-family: var(--font-display);
+      color: var(--gold-light);
+      margin-bottom: .7rem;
+      font-size: 1.8rem;
+    }
+    .timeline li { margin: 0.5rem 0; }
+    .timeline strong { color: var(--gold-light); }
+
+    @media (max-width: 900px) {
+      .story-grid { grid-template-columns: 1fr; }
+    }
