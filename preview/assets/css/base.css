@@ -73,6 +73,18 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
+/* Content list defaults (restore readable bullet indentation after reset) */
+main ul,
+main ol {
+  padding-left: 1.35rem;
+}
+@media (max-width: 640px) {
+  main ul,
+  main ol {
+    padding-left: 1.5rem;
+  }
+}
+
 /* ============================================================
    SITE-WIDE HEADER
 ============================================================ */
