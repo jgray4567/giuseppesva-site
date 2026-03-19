@@ -29,6 +29,15 @@
     const catLinks = document.querySelectorAll('#cat-nav a');
     const catSelect = document.getElementById('cat-nav-select');
 
+    // Add a small centered "Back to Top" button to each menu section
+    sections.forEach(section => {
+      if (section.querySelector('.back-to-top-wrap')) return;
+      const wrap = document.createElement('div');
+      wrap.className = 'back-to-top-wrap';
+      wrap.innerHTML = '<a href="#menu-hero" class="back-to-top-btn" aria-label="Back to top">Back to Top</a>';
+      section.appendChild(wrap);
+    });
+
     // Dropdown: navigate on change
     catSelect.addEventListener('change', () => {
       const target = document.querySelector(catSelect.value);
