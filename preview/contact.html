@@ -96,14 +96,17 @@
 
         <aside class="card">
           <h2>Send a Message</h2>
-          <form class="contact-form" action="#" method="post" onsubmit="return false;">
+          <form class="contact-form" action="https://formspree.io/f/mzdkydln" method="POST">
+            <input type="hidden" name="_cc" value="salfrusso@gmail.com" />
+            <input type="hidden" name="_subject" value="New inquiry from giuseppesva.com" />
+            <input type="hidden" name="_next" value="https://www.giuseppesva.com/contact.html?sent=1" />
             <label>
               Name
-              <input type="text" name="name" placeholder="Your name" />
+              <input type="text" name="name" placeholder="Your name" required />
             </label>
             <label>
               Email
-              <input type="email" name="email" placeholder="you@example.com" />
+              <input type="email" name="email" placeholder="you@example.com" required />
             </label>
             <label>
               Phone
@@ -111,10 +114,9 @@
             </label>
             <label>
               Message
-              <textarea name="message" rows="5" placeholder="How can we help?"></textarea>
+              <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
             </label>
             <button type="submit" class="submit-btn">Send Inquiry</button>
-            <p class="form-note">Form wiring can be connected to email or CRM next.</p>
           </form>
         </aside>
       </div>
