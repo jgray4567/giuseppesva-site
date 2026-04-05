@@ -69,6 +69,8 @@
     .josie-photo {
       width: 180px;
       height: 180px;
+      max-width: 50vw;
+      max-height: 50vw;
       object-fit: cover;
       object-position: top;
       border-radius: 50%;
@@ -110,13 +112,18 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      visibility: hidden;
+      overflow: hidden;
     }
     .lightbox-overlay.active {
       display: flex;
+      visibility: visible;
     }
     .lightbox-overlay img {
       max-width: 90vw;
       max-height: 85vh;
+      width: auto;
+      height: auto;
       border-radius: 6px;
       box-shadow: 0 4px 40px rgba(0,0,0,.6);
     }
