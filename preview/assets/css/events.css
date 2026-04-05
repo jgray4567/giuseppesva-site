@@ -48,8 +48,27 @@
       padding: .75rem .8rem;
       background: rgba(255,255,255,.01);
     }
-    .event-item h3 { font-family: var(--font-display); font-size: 1.15rem; color: var(--parchment); }
+    .event-date {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+    .event-item h3 { font-family: var(--font-display); font-size: 1.15rem; color: var(--parchment); margin-bottom: 0.3rem; }
     .event-item p { color: var(--cream); opacity: .9; }
+    .event-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-family: var(--font-display);
+      font-size: 0.88rem;
+      color: var(--gold-light);
+      letter-spacing: 0.03em;
+      opacity: 0.8;
+    }
+    .event-link:hover { opacity: 1; }
 
     .cta-bar { margin-top: 1rem; display:flex; flex-wrap:wrap; gap:.7rem; }
     .cta {
