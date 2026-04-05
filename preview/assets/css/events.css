@@ -27,7 +27,7 @@
     }
 
     .content-wrap { max-width: 1080px; margin: 0 auto; padding: 3rem 1.2rem 4rem; }
-    .grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.4rem; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 1.4rem; }
     .card {
       background: #17130f;
       border: 1px solid rgba(200,162,80,.18);
@@ -41,7 +41,7 @@
       margin-bottom: .65rem;
     }
 
-    .events-list { margin-top: 1rem; display: grid; gap: .7rem; }
+    .events-list { margin-top: 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
     .event-item {
       border: 1px solid rgba(200,162,80,.14);
       border-radius: 8px;
@@ -88,4 +88,5 @@
 
     @media (max-width: 960px) {
       .grid { grid-template-columns: 1fr; }
+      .events-list { grid-template-columns: 1fr; }
     }
