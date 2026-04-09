@@ -27,6 +27,16 @@
     }
 
     .content-wrap { max-width: 1050px; margin: 0 auto; padding: 3rem 1.2rem 4rem; }
+    .dining-photo-wrap {
+      margin-bottom: 1.4rem;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(200,162,80,.18);
+    }
+    .dining-photo {
+      width: 100%;
+      display: block;
+    }
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;

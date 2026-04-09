@@ -86,7 +86,112 @@
 
     .fb-wrap { min-height: 560px; display:flex; align-items:flex-start; justify-content:center; }
 
+    /* Catering card */
+    .catering-card { margin-top: 1.4rem; }
+    .catering-layout {
+      display: grid;
+      grid-template-columns: 0.45fr 1.55fr;
+      gap: 1.4rem;
+      align-items: center;
+    }
+    .catering-photo-wrap {
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .catering-photo {
+      width: 100%;
+      display: block;
+    }
+    .catering-content p {
+      color: var(--parchment);
+      opacity: 0.9;
+      line-height: 1.7;
+    }
+
+    /* Banquet lightbox */
+    .banquet-lightbox-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,.9);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .banquet-lightbox-overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+    .banquet-lightbox-inner {
+      position: relative;
+      max-width: 90vw;
+      max-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banquet-lightbox-inner img {
+      max-width: 90vw;
+      max-height: 80vh;
+      width: auto;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 40px rgba(0,0,0,.6);
+    }
+    .banquet-lightbox-close {
+      position: absolute;
+      top: -2rem;
+      right: -0.5rem;
+      background: none;
+      border: none;
+      color: var(--parchment);
+      font-size: 2rem;
+      cursor: pointer;
+      line-height: 1;
+      opacity: 0.8;
+    }
+    .banquet-lightbox-close:hover { opacity: 1; }
+    .banquet-lightbox-prev,
+    .banquet-lightbox-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,.5);
+      border: 1px solid rgba(200,162,80,.3);
+      color: var(--parchment);
+      font-size: 2rem;
+      padding: 0.3rem 0.7rem;
+      cursor: pointer;
+      border-radius: 4px;
+      line-height: 1;
+    }
+    .banquet-lightbox-prev { left: -3.5rem; }
+    .banquet-lightbox-next { right: -3.5rem; }
+    .banquet-lightbox-prev:hover,
+    .banquet-lightbox-next:hover { background: rgba(0,0,0,.8); }
+    .banquet-lightbox-counter {
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--parchment);
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
     @media (max-width: 960px) {
       .grid { grid-template-columns: 1fr; }
       .events-list { grid-template-columns: 1fr; }
+      .catering-layout { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .banquet-lightbox-prev { left: 0.5rem; }
+      .banquet-lightbox-next { right: 0.5rem; }
     }
