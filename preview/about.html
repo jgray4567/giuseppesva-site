@@ -81,9 +81,15 @@
       <div class="story-grid">
         <article class="card">
           <h2>A Family Tradition</h2>
+          <div class="family-photo-wrap">
+            <a href="#" id="family-photo-link" aria-label="View family photos">
+              <img src="assets/images/papajoe.webp" alt="Joe Russo, founder of Giuseppe’s" class="family-photo" loading="lazy" />
+            </a>
+          </div>
           <p>Giuseppe’s was built on the idea that great food brings people together. From house-made sauces and fresh ingredients to timeless Sicilian recipes, every plate reflects decades of craft and care.</p>
           <p>What started as a neighborhood favorite has become a gathering place for birthdays, celebrations, and everyday dinners with family and friends.</p>
-          <p>We’re proud to serve Haymarket with the same commitment to quality and hospitality that has guided us since day one.</p>
+          <p style="margin-top:1rem;">We’re proud to serve Haymarket with the same commitment to quality and hospitality that has guided us since day one.</p>
+          <p style="margin-top:1rem; text-align:right; font-style:italic;">&mdash; Giuseppe "Joe" Russo</p>
         </article>
 
         <aside class="card">
@@ -94,6 +100,11 @@
             <li><strong>2000s</strong> — Becomes a trusted destination for family dining and local celebrations.</li>
             <li><strong>Today</strong> — Continuing the tradition with authentic cuisine and heartfelt service.</li>
           </ul>
+          <div class="article-photo-wrap">
+            <a href="#" id="article-photo-link" aria-label="View newspaper articles">
+              <img src="assets/images/GsArticle01.jpg" alt="Newspaper article about Giuseppe's" class="article-photo" loading="lazy" />
+            </a>
+          </div>
         </aside>
       </div>
 
@@ -120,6 +131,87 @@
       link.addEventListener('click', function(e){ e.preventDefault(); lb.classList.add('active'); });
       lb.addEventListener('click', function(){ lb.classList.remove('active'); });
     }
+  })();
+  </script>
+
+  <div id="family-lightbox" class="family-lightbox-overlay">
+    <div class="family-lightbox-inner">
+      <button class="family-lightbox-close" aria-label="Close">&times;</button>
+      <button class="family-lightbox-prev" aria-label="Previous photo">&#8249;</button>
+      <img id="family-lightbox-img" src="assets/images/papajoe.webp" alt="Giuseppe's family photos" />
+      <button class="family-lightbox-next" aria-label="Next photo">&#8250;</button>
+      <p class="family-lightbox-counter"><span id="family-lightbox-current">1</span> / 8</p>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var photos = [
+      'assets/images/papajoe.webp',
+      'assets/images/about001.jpg',
+      'assets/images/about002.jpg',
+      'assets/images/about003.jpg',
+      'assets/images/about007.jpg',
+      'assets/images/about010.jpg',
+      'assets/images/Giuseppe01.jpg',
+      'assets/images/sal-russo.jpg'
+    ];
+    var idx = 0;
+    var link = document.getElementById('family-photo-link');
+    var lb = document.getElementById('family-lightbox');
+    var img = document.getElementById('family-lightbox-img');
+    var counter = document.getElementById('family-lightbox-current');
+    var closeBtn = lb.querySelector('.family-lightbox-close');
+    var prevBtn = lb.querySelector('.family-lightbox-prev');
+    var nextBtn = lb.querySelector('.family-lightbox-next');
+
+    function show(i){ idx = i; img.src = photos[idx]; counter.textContent = idx + 1; }
+    function open(){ lb.classList.add('active'); show(0); }
+    function close(){ lb.classList.remove('active'); }
+
+    link.addEventListener('click', function(e){ e.preventDefault(); open(); });
+    closeBtn.addEventListener('click', function(e){ e.stopPropagation(); close(); });
+    prevBtn.addEventListener('click', function(e){ e.stopPropagation(); show(idx === 0 ? photos.length - 1 : idx - 1); });
+    nextBtn.addEventListener('click', function(e){ e.stopPropagation(); show(idx === photos.length - 1 ? 0 : idx + 1); });
+    lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+  })();
+  </script>
+
+  <div id="article-lightbox" class="family-lightbox-overlay">
+    <div class="family-lightbox-inner">
+      <button class="family-lightbox-close" aria-label="Close">&times;</button>
+      <button class="family-lightbox-prev" aria-label="Previous photo">&#8249;</button>
+      <img id="article-lightbox-img" src="assets/images/GsArticle01.jpg" alt="Newspaper articles about Giuseppe's" />
+      <button class="family-lightbox-next" aria-label="Next photo">&#8250;</button>
+      <p class="family-lightbox-counter"><span id="article-lightbox-current">1</span> / 3</p>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var photos = [
+      'assets/images/GsArticle01.jpg',
+      'assets/images/GsArticle02.jpg',
+      'assets/images/GsArticle03.jpg'
+    ];
+    var idx = 0;
+    var link = document.getElementById('article-photo-link');
+    var lb = document.getElementById('article-lightbox');
+    var img = document.getElementById('article-lightbox-img');
+    var counter = document.getElementById('article-lightbox-current');
+    var closeBtn = lb.querySelector('.family-lightbox-close');
+    var prevBtn = lb.querySelector('.family-lightbox-prev');
+    var nextBtn = lb.querySelector('.family-lightbox-next');
+
+    function show(i){ idx = i; img.src = photos[idx]; counter.textContent = idx + 1; }
+    function open(){ lb.classList.add('active'); show(0); }
+    function close(){ lb.classList.remove('active'); }
+
+    link.addEventListener('click', function(e){ e.preventDefault(); open(); });
+    closeBtn.addEventListener('click', function(e){ e.stopPropagation(); close(); });
+    prevBtn.addEventListener('click', function(e){ e.stopPropagation(); show(idx === 0 ? photos.length - 1 : idx - 1); });
+    nextBtn.addEventListener('click', function(e){ e.stopPropagation(); show(idx === photos.length - 1 ? 0 : idx + 1); });
+    lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
   })();
   </script>
 

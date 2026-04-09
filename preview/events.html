@@ -104,8 +104,60 @@
           </div>
         </article>
       </div>
+
+      <article class="card catering-card">
+        <div class="catering-layout">
+          <div class="catering-photo-wrap">
+            <a href="#" id="banquet-photo-link" aria-label="View banquet photos">
+              <img src="assets/images/Banquet.jpg" alt="Giuseppe's banquet room set for a celebration" class="catering-photo" loading="lazy" />
+            </a>
+          </div>
+          <div class="catering-content">
+            <h2>Catering &amp; Private Events</h2>
+            <p>Our family is here to help you celebrate your special event with authentic Italian cuisine in friendly, inviting surroundings. Menus can be customized for groups of all sizes, from a buffet-style setting to ordering &Agrave; la carte. We can accommodate up to 120 guests and create the perfect setting for any occasion!</p>
+            <div class="cta-bar">
+              <a class="cta primary" href="assets/pdf/GiuseppesCateringMenu.pdf" target="_blank" rel="noopener">View Catering Menu</a>
+              <a class="cta" href="contact.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
+
+  <div id="banquet-lightbox" class="banquet-lightbox-overlay">
+    <div class="banquet-lightbox-inner">
+      <button class="banquet-lightbox-close" aria-label="Close">&times;</button>
+      <button class="banquet-lightbox-prev" aria-label="Previous photo">&#8249;</button>
+      <img id="banquet-lightbox-img" src="assets/images/Banquet.jpg" alt="Giuseppe's banquet room" />
+      <button class="banquet-lightbox-next" aria-label="Next photo">&#8250;</button>
+      <p class="banquet-lightbox-counter"><span id="banquet-lightbox-current">1</span> / 2</p>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var photos = ['assets/images/Banquet.jpg', 'assets/images/Banquet2.jpg'];
+    var idx = 0;
+    var link = document.getElementById('banquet-photo-link');
+    var lb = document.getElementById('banquet-lightbox');
+    var img = document.getElementById('banquet-lightbox-img');
+    var counter = document.getElementById('banquet-lightbox-current');
+    var closeBtn = lb.querySelector('.banquet-lightbox-close');
+    var prevBtn = lb.querySelector('.banquet-lightbox-prev');
+    var nextBtn = lb.querySelector('.banquet-lightbox-next');
+
+    function show(i){ idx = i; img.src = photos[idx]; counter.textContent = idx + 1; }
+    function open(){ lb.classList.add('active'); show(0); }
+    function close(){ lb.classList.remove('active'); }
+
+    link.addEventListener('click', function(e){ e.preventDefault(); open(); });
+    closeBtn.addEventListener('click', function(e){ e.stopPropagation(); close(); });
+    prevBtn.addEventListener('click', function(e){ e.stopPropagation(); show(idx === 0 ? photos.length - 1 : idx - 1); });
+    nextBtn.addEventListener('click', function(e){ e.stopPropagation(); show(idx === photos.length - 1 ? 0 : idx + 1); });
+    lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+  })();
+  </script>
 
   <footer id="site-footer">
     <div class="footer-inner">
