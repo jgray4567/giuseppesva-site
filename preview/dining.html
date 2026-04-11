@@ -77,9 +77,24 @@
     </section>
 
     <section class="content-wrap">
-      <div class="dining-photo-wrap">
-        <img src="assets/images/DiningRoom.jpg" alt="Giuseppe's dining room" class="dining-photo" loading="lazy" />
+      <div class="food-slider-wrap">
+        <button class="slider-arrow slider-arrow-left" aria-label="Scroll left">&#8249;</button>
+        <div class="food-slider" id="foodSlider">
+          <a href="#" class="food-thumb" data-index="0"><img src="assets/images/food-01.jpg" alt="Arancini" loading="lazy" /></a>
+          <a href="#" class="food-thumb" data-index="1"><img src="assets/images/food-02.jpg" alt="Buffalo Wings" loading="lazy" /></a>
+          <a href="#" class="food-thumb" data-index="2"><img src="assets/images/food-03.jpg" alt="Cannoli" loading="lazy" /></a>
+          <a href="#" class="food-thumb" data-index="3"><img src="assets/images/food-04.jpg" alt="Cheese Pizza" loading="lazy" /></a>
+          <a href="#" class="food-thumb" data-index="4"><img src="assets/images/food-05.jpg" alt="Fettuccine Adriatico" loading="lazy" /></a>
+          <a href="#" class="food-thumb" data-index="5"><img src="assets/images/food-06.jpg" alt="Fresh Cut Fries" loading="lazy" /></a>
+          <a href="#" class="food-thumb" data-index="6"><img src="assets/images/food-07.jpg" alt="Hero Sandwich" loading="lazy" /></a>
+          <a href="#" class="food-thumb" data-index="7"><img src="assets/images/food-08.jpg" alt="Caesar Salad" loading="lazy" /></a>
+          <a href="#" class="food-thumb" data-index="8"><img src="assets/images/food-09.jpg" alt="Garden Salad" loading="lazy" /></a>
+          <a href="#" class="food-thumb" data-index="9"><img src="assets/images/food-10.jpg" alt="Spaghetti with Meatballs" loading="lazy" /></a>
+          <a href="#" class="food-thumb" data-index="10"><img src="assets/images/food-11.jpg" alt="Zep Hoagie Italian" loading="lazy" /></a>
+        </div>
+        <button class="slider-arrow slider-arrow-right" aria-label="Scroll right">&#8250;</button>
       </div>
+
       <div class="grid">
         <article class="card">
           <h2>Dining Experience</h2>
@@ -101,6 +116,17 @@
         </aside>
       </div>
     </section>
+
+    <!-- Food lightbox -->
+    <div class="food-lightbox-overlay" id="foodLightbox">
+      <div class="food-lightbox-inner">
+        <button class="food-lightbox-close" aria-label="Close">&times;</button>
+        <button class="food-lightbox-prev" aria-label="Previous">&#8249;</button>
+        <img id="foodLightboxImg" src="" alt="" />
+        <button class="food-lightbox-next" aria-label="Next">&#8250;</button>
+        <span class="food-lightbox-counter" id="foodLightboxCounter"></span>
+      </div>
+    </div>
   </main>
 
   <footer id="site-footer">
