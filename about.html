@@ -81,9 +81,16 @@
       <div class="story-grid">
         <article class="card">
           <h2>A Family Tradition</h2>
+          <div class="family-photo-wrap">
+            <a href="#" id="family-photo-link" aria-label="View family photos" style="position:relative;display:block;">
+              <img src="assets/images/papajoe.webp" alt="Joe Russo, founder of Giuseppe’s" class="family-photo" loading="lazy" />
+              <span style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.55);color:#fff;text-align:center;padding:.45rem 0;font-family:var(--font-display);font-size:.85rem;letter-spacing:.06em;">Open Photo Album</span>
+            </a>
+          </div>
           <p>Giuseppe’s was built on the idea that great food brings people together. From house-made sauces and fresh ingredients to timeless Sicilian recipes, every plate reflects decades of craft and care.</p>
           <p>What started as a neighborhood favorite has become a gathering place for birthdays, celebrations, and everyday dinners with family and friends.</p>
-          <p>We’re proud to serve Haymarket with the same commitment to quality and hospitality that has guided us since day one.</p>
+          <p style="margin-top:1rem;">We’re proud to serve Haymarket with the same commitment to quality and hospitality that has guided us since day one.</p>
+          <p style="margin-top:1rem; text-align:right; font-style:italic;">&mdash; Giuseppe "Joe" Russo</p>
         </article>
 
         <aside class="card">
@@ -94,10 +101,126 @@
             <li><strong>2000s</strong> — Becomes a trusted destination for family dining and local celebrations.</li>
             <li><strong>Today</strong> — Continuing the tradition with authentic cuisine and heartfelt service.</li>
           </ul>
+          <div class="article-photo-wrap">
+            <a href="#" id="article-photo-link" aria-label="View newspaper articles">
+              <img src="assets/images/GsArticle01.jpg" alt="Newspaper article about Giuseppe's" class="article-photo" loading="lazy" />
+            </a>
+          </div>
         </aside>
       </div>
+
+      <section class="josie-tribute">
+        <div class="tribute-rule"></div>
+        <a href="#" id="josie-photo-link" aria-label="View full photo of Josie Russo"><img src="assets/images/josie.jpg" alt="Giuseppa 'Josie' Russo" class="josie-photo" width="180" height="180" loading="lazy" /></a>
+        <h2>Giuseppa "Josie" Russo &mdash; The Heart of Giuseppe's</h2>
+        <p>Giuseppa "Josie" Russo was the heart and soul of Giuseppe's. Born in Italy and wed to Giuseppe for fifty beautiful years, Josie poured her love into everything she touched — from the cakes she baked by hand each morning to the warm smile and embrace she gave every guest who walked through our doors. Those who knew her remember a woman of extraordinary grace, quiet courage, and boundless generosity — someone who made you feel like family from the very first visit.<br />Josie will always be the heart of Giuseppe's.</p>
+
+      </section>
+
     </section>
   </main>
+
+  <div id="josie-lightbox" class="lightbox-overlay">
+    <img src="assets/images/josie.jpg" alt="Giuseppa 'Josie' Russo" />
+  </div>
+
+  <script>
+  (function(){
+    var link = document.getElementById('josie-photo-link');
+    var lb = document.getElementById('josie-lightbox');
+    if(link && lb){
+      link.addEventListener('click', function(e){ e.preventDefault(); lb.classList.add('active'); });
+      lb.addEventListener('click', function(){ lb.classList.remove('active'); });
+    }
+  })();
+  </script>
+
+  <div id="family-lightbox" class="family-lightbox-overlay">
+    <div class="family-lightbox-inner">
+      <button class="family-lightbox-close" aria-label="Close">&times;</button>
+      <button class="family-lightbox-prev" aria-label="Previous photo">&#8249;</button>
+      <img id="family-lightbox-img" src="assets/images/papajoe.webp" alt="Giuseppe's family photos" />
+      <button class="family-lightbox-next" aria-label="Next photo">&#8250;</button>
+      <p class="family-lightbox-counter"><span id="family-lightbox-current">1</span> / 14</p>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var photos = [
+      'assets/images/papajoe.webp',
+      'assets/images/about001.jpg',
+      'assets/images/about002.jpg',
+      'assets/images/about010.jpg',
+      'assets/images/Giuseppe01.jpg',
+      'assets/images/sal-russo.jpg',
+      'assets/images/about-jj01.jpg',
+      'assets/images/about-jj02.jpg',
+      'assets/images/about-jj03.jpg',
+      'assets/images/about-jj04.jpg',
+      'assets/images/about-jj05.jpg',
+      'assets/images/about-jj06.jpg',
+      'assets/images/about-jj07.jpg',
+      'assets/images/about-jj08.jpg'
+    ];
+    var idx = 0;
+    var link = document.getElementById('family-photo-link');
+    var lb = document.getElementById('family-lightbox');
+    var img = document.getElementById('family-lightbox-img');
+    var counter = document.getElementById('family-lightbox-current');
+    var closeBtn = lb.querySelector('.family-lightbox-close');
+    var prevBtn = lb.querySelector('.family-lightbox-prev');
+    var nextBtn = lb.querySelector('.family-lightbox-next');
+
+    function show(i){ idx = i; img.src = photos[idx]; counter.textContent = idx + 1; }
+    function open(){ lb.classList.add('active'); show(0); }
+    function close(){ lb.classList.remove('active'); }
+
+    link.addEventListener('click', function(e){ e.preventDefault(); open(); });
+    closeBtn.addEventListener('click', function(e){ e.stopPropagation(); close(); });
+    prevBtn.addEventListener('click', function(e){ e.stopPropagation(); show(idx === 0 ? photos.length - 1 : idx - 1); });
+    nextBtn.addEventListener('click', function(e){ e.stopPropagation(); show(idx === photos.length - 1 ? 0 : idx + 1); });
+    lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+  })();
+  </script>
+
+  <div id="article-lightbox" class="family-lightbox-overlay">
+    <div class="family-lightbox-inner">
+      <button class="family-lightbox-close" aria-label="Close">&times;</button>
+      <button class="family-lightbox-prev" aria-label="Previous photo">&#8249;</button>
+      <img id="article-lightbox-img" src="assets/images/GsArticle01.jpg" alt="Newspaper articles about Giuseppe's" />
+      <button class="family-lightbox-next" aria-label="Next photo">&#8250;</button>
+      <p class="family-lightbox-counter"><span id="article-lightbox-current">1</span> / 3</p>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var photos = [
+      'assets/images/GsArticle01.jpg',
+      'assets/images/GsArticle02.jpg',
+      'assets/images/GsArticle03.jpg'
+    ];
+    var idx = 0;
+    var link = document.getElementById('article-photo-link');
+    var lb = document.getElementById('article-lightbox');
+    var img = document.getElementById('article-lightbox-img');
+    var counter = document.getElementById('article-lightbox-current');
+    var closeBtn = lb.querySelector('.family-lightbox-close');
+    var prevBtn = lb.querySelector('.family-lightbox-prev');
+    var nextBtn = lb.querySelector('.family-lightbox-next');
+
+    function show(i){ idx = i; img.src = photos[idx]; counter.textContent = idx + 1; }
+    function open(){ lb.classList.add('active'); show(0); }
+    function close(){ lb.classList.remove('active'); }
+
+    link.addEventListener('click', function(e){ e.preventDefault(); open(); });
+    closeBtn.addEventListener('click', function(e){ e.stopPropagation(); close(); });
+    prevBtn.addEventListener('click', function(e){ e.stopPropagation(); show(idx === 0 ? photos.length - 1 : idx - 1); });
+    nextBtn.addEventListener('click', function(e){ e.stopPropagation(); show(idx === photos.length - 1 ? 0 : idx + 1); });
+    lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+  })();
+  </script>
 
   <footer id="site-footer">
     <div class="footer-inner">

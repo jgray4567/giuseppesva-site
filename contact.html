@@ -96,14 +96,18 @@
 
         <aside class="card">
           <h2>Send a Message</h2>
-          <form class="contact-form" action="#" method="post" onsubmit="return false;">
+          <form class="contact-form" action="https://formspree.io/f/mzdkydln" method="POST">
+            <input type="hidden" name="_cc" value="salfrusso@gmail.com" />
+            <input type="hidden" name="_subject" value="New inquiry from giuseppesva.com" />
+            <input type="hidden" name="_next" value="https://www.giuseppesva.com/contact.html?sent=1" />
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
             <label>
               Name
-              <input type="text" name="name" placeholder="Your name" />
+              <input type="text" name="name" placeholder="Your name" required />
             </label>
             <label>
               Email
-              <input type="email" name="email" placeholder="you@example.com" />
+              <input type="email" name="email" placeholder="you@example.com" required />
             </label>
             <label>
               Phone
@@ -111,13 +115,20 @@
             </label>
             <label>
               Message
-              <textarea name="message" rows="5" placeholder="How can we help?"></textarea>
+              <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
             </label>
             <button type="submit" class="submit-btn">Send Inquiry</button>
-            <p class="form-note">Form wiring can be connected to email or CRM next.</p>
           </form>
         </aside>
       </div>
+
+      <div class="card map-card">
+        <h2>Find Us</h2>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps?q=Giuseppe%27s+Ristorante+Italiano+15120+Washington+St+Haymarket+VA+20169&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Giuseppe's Ristorante Italiano location"></iframe>
+        </div>
+      </div>
+
     </section>
   </main>
 

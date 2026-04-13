@@ -81,47 +81,83 @@
       <div class="grid">
         <article class="card">
           <h2>Upcoming Events</h2>
-          <p>We’re setting this page up to sync with Giuseppe’s Facebook events feed. Until full API sync is enabled, events can be shown from the Facebook page plugin below and manually curated highlights.</p>
 
           <div class="events-list" id="events-fallback">
             <div class="event-item">
-              <h3>Weekly Specials & Live Nights</h3>
-              <p>Check our Facebook page for the latest event schedule and announcements.</p>
+              <span class="event-date">Friday, May 29 &middot; 7:00 PM</span>
+              <h3>Bob D Returns!</h3>
+              <p>Live music on the patio at Giuseppe’s. Join us for a great evening of food, drinks, and tunes.</p>
+              <a class="event-link" href="https://www.facebook.com/events/2074062296787449/" target="_blank" rel="noopener">View on Facebook &rarr;</a>
             </div>
             <div class="event-item">
-              <h3>Private Group Dining</h3>
-              <p>Planning a celebration? Contact us for group reservations and custom menu options.</p>
+              <span class="event-date">Tuesday, June 30 &middot; 5:30 &ndash; 8:30 PM</span>
+              <h3>Shane &amp; Jackson &amp; Aidan @ Giuseppe’s Patio</h3>
+              <p>A dynamic trio performing older classics, originals, and reimagined modern songs. Come out and enjoy live music on the patio.</p>
+              <a class="event-link" href="https://www.facebook.com/events/1503261951421441/" target="_blank" rel="noopener">View on Facebook &rarr;</a>
             </div>
           </div>
 
           <div class="cta-bar">
-            <a class="cta primary" href="https://www.facebook.com/giuseppesri" target="_blank" rel="noopener">View Facebook Events</a>
+            <a class="cta primary" href="https://www.facebook.com/giuseppesri/events" target="_blank" rel="noopener">All Events on Facebook</a>
             <a class="cta" href="contact.html">Inquire About Catering</a>
             <a class="cta" href="speakeasy.html">Explore Dopo Ora</a>
           </div>
         </article>
+      </div>
 
-        <aside class="card">
-          <h2>Facebook Feed</h2>
-          <div class="fb-wrap">
-            <div class="fb-page"
-              data-href="https://www.facebook.com/giuseppesri"
-              data-tabs="events"
-              data-width="500"
-              data-height="560"
-              data-small-header="false"
-              data-adapt-container-width="true"
-              data-hide-cover="false"
-              data-show-facepile="false">
-              <blockquote cite="https://www.facebook.com/giuseppesri" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/giuseppesri">Giuseppe's Ristorante Italiano</a>
-              </blockquote>
+      <article class="card catering-card">
+        <div class="catering-layout">
+          <div class="catering-photo-wrap">
+            <a href="#" id="banquet-photo-link" aria-label="View banquet photos">
+              <img src="assets/images/Banquet.jpg" alt="Giuseppe's banquet room set for a celebration" class="catering-photo" loading="lazy" />
+            </a>
+          </div>
+          <div class="catering-content">
+            <h2>Catering &amp; Private Events</h2>
+            <p>Our family is here to help you celebrate your special event with authentic Italian cuisine in friendly, inviting surroundings. Menus can be customized for groups of all sizes, from a buffet-style setting to ordering &Agrave; la carte. We can accommodate up to 120 guests and create the perfect setting for any occasion!</p>
+            <div class="cta-bar">
+              <a class="cta primary" href="assets/pdf/GiuseppesCateringMenu.pdf" target="_blank" rel="noopener">View Catering Menu</a>
+              <a class="cta" href="contact.html">Contact Us</a>
             </div>
           </div>
-        </aside>
-      </div>
+        </div>
+      </article>
     </section>
   </main>
+
+  <div id="banquet-lightbox" class="banquet-lightbox-overlay">
+    <div class="banquet-lightbox-inner">
+      <button class="banquet-lightbox-close" aria-label="Close">&times;</button>
+      <button class="banquet-lightbox-prev" aria-label="Previous photo">&#8249;</button>
+      <img id="banquet-lightbox-img" src="assets/images/Banquet.jpg" alt="Giuseppe's banquet room" />
+      <button class="banquet-lightbox-next" aria-label="Next photo">&#8250;</button>
+      <p class="banquet-lightbox-counter"><span id="banquet-lightbox-current">1</span> / 2</p>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var photos = ['assets/images/Banquet.jpg', 'assets/images/Banquet2.jpg'];
+    var idx = 0;
+    var link = document.getElementById('banquet-photo-link');
+    var lb = document.getElementById('banquet-lightbox');
+    var img = document.getElementById('banquet-lightbox-img');
+    var counter = document.getElementById('banquet-lightbox-current');
+    var closeBtn = lb.querySelector('.banquet-lightbox-close');
+    var prevBtn = lb.querySelector('.banquet-lightbox-prev');
+    var nextBtn = lb.querySelector('.banquet-lightbox-next');
+
+    function show(i){ idx = i; img.src = photos[idx]; counter.textContent = idx + 1; }
+    function open(){ lb.classList.add('active'); show(0); }
+    function close(){ lb.classList.remove('active'); }
+
+    link.addEventListener('click', function(e){ e.preventDefault(); open(); });
+    closeBtn.addEventListener('click', function(e){ e.stopPropagation(); close(); });
+    prevBtn.addEventListener('click', function(e){ e.stopPropagation(); show(idx === 0 ? photos.length - 1 : idx - 1); });
+    nextBtn.addEventListener('click', function(e){ e.stopPropagation(); show(idx === photos.length - 1 ? 0 : idx + 1); });
+    lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+  })();
+  </script>
 
   <footer id="site-footer">
     <div class="footer-inner">
