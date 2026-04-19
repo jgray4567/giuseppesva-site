@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Parse and filter past events
       const validEvents = events.map(event => {
         // Clean up string like "Fri, Apr 24 at 9 PM" -> "Fri, Apr 24 9 PM"
-        let cleanDate = event.date
+        let d = new Date(event.parsedDate); return { ...event, parsedDate: d }; //
           .replace(' at ', ' ')
           .replace(/[\u202F\u00A0]/g, ' ') // Fix narrow non-breaking spaces
           .replace(/am/i, ' AM')
