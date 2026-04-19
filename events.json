@@ -1,20 +1,26 @@
 [
   {
-    "date": "Friday, April 24 &middot; 9:00 PM",
-    "title": "DJ Night!",
-    "description": "Join us for DJ Night! Great music, drinks, and late night fun.",
-    "url": "https://www.facebook.com/giuseppesri/events"
-  },
-  {
-    "date": "Saturday, April 25 &middot; 6:00 PM",
-    "title": "Evening of the Arts",
-    "description": "Event by Crossroads Arts Alliance at Giuseppe's.",
-    "url": "https://www.facebook.com/giuseppesri/events"
-  },
-  {
-    "date": "Saturday, April 25 &middot; 9:00 PM",
+    "date": "Sat, Apr 25 at 9 PM",
     "title": "Karaoke",
-    "description": "Karaoke night! Come sing your heart out.",
-    "url": "https://www.facebook.com/giuseppesri/events"
+    "description": "Join us at Giuseppe's for Karaoke!",
+    "url": "https://www.facebook.com/events/1574983431014656/"
+  },
+  {
+    "date": "Fri, Apr 24 at 9 PM",
+    "title": "DJ Night!",
+    "description": "Join us at Giuseppe's for DJ Night!!",
+    "url": "https://www.facebook.com/events/2490220131436950/"
+  },
+  {
+    "date": "Sat, Apr 25 at 6 PM",
+    "title": "Evening of the Arts",
+    "description": "Join us at Giuseppe's for Evening of the Arts!",
+    "url": "https://www.facebook.com/events/1448548360148572/"
+  },
+  {
+    "date": "Fri, May 29 at 7 PM",
+    "title": "Bob D Returns!",
+    "description": "Join us at Giuseppe's for Bob D Returns!!",
+    "url": "https://www.facebook.com/events/2074062296787449/"
   }
 ]
