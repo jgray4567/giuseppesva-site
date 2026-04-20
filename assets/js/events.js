@@ -72,12 +72,12 @@ document.addEventListener('DOMContentLoaded', () => {
         grouped[month].forEach(event => {
           const item = document.createElement('div');
           item.className = 'event-item';
-          item.innerHTML = \`
-            <span class="event-date">\${event.date}</span>
-            <h3>\${event.title}</h3>
-            <p>\${event.description}</p>
-            <a class="event-link" href="\${event.url}" target="_blank" rel="noopener">View on Facebook &rarr;</a>
-          \`;
+          item.innerHTML = `
+            <span class="event-date">${event.date}</span>
+            <h3>${event.title}</h3>
+            <p>${event.description}</p>
+            <a class="event-link" href="${event.url}" target="_blank" rel="noopener">View on Facebook &rarr;</a>
+          `;
           contentDiv.appendChild(item);
         });
       }
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Inject some base styles for tabs
       const style = document.createElement('style');
-      style.textContent = \`
+      style.textContent = `
         .event-months-tabs { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
         .month-tab-btn { 
           background: transparent; 
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
           color: #111; 
           font-weight: 600;
         }
-      \`;
+      `;
       document.head.appendChild(style);
 
       // Select first month by default
