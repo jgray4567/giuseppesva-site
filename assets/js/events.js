@@ -16,18 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Parse and filter past events
       const validEvents = events.map(event => {
-        // Clean up string like "Fri, Apr 24 at 9 PM" -> "Fri, Apr 24 9 PM"
-        let d = new Date(event.parsedDate); return { ...event, parsedDate: d }; //
-          .replace(' at ', ' ')
-          .replace(/[\u202F\u00A0]/g, ' ') // Fix narrow non-breaking spaces
-          .replace(/am/i, ' AM')
-          .replace(/pm/i, ' PM');
-          
-        let d = new Date(cleanDate);
-        if (isNaN(d.getTime())) {
-          // Fallback: strip day of week
-          d = new Date(cleanDate.replace(/^[a-zA-Z]+,\s*/, ''));
-        }
+        let d = new Date(event.parsedDate || event.date);
         return { ...event, parsedDate: d };
       }).filter(e => {
         // If we absolutely cannot parse it, keep it just in case
