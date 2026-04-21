@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Inject some base styles for tabs
       const style = document.createElement('style');
       style.textContent = `
-        .event-months-tabs { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
+        .event-months-tabs { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
         .month-tab-btn { 
           background: transparent; 
           border: 1px solid var(--gold-light, #c8a250); 
@@ -106,12 +106,22 @@ document.addEventListener('DOMContentLoaded', () => {
           font-size: 1rem;
           border-radius: 4px; 
           transition: 0.2s; 
+          display: inline-block;
+          flex: 0 0 auto;
+          width: auto;
+          min-height: auto;
+          line-height: 1;
         }
         .month-tab-btn:hover { background: rgba(200,162,80,0.2); }
         .month-tab-btn.active { 
           background: var(--gold-light, #c8a250); 
           color: #111; 
           font-weight: 600;
+        }
+        .event-months-content {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 15px;
         }
       `;
       document.head.appendChild(style);
