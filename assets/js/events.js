@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Render UI
       eventsContainer.innerHTML = '';
+      eventsContainer.style.display = 'block'; // Override the default .events-list grid so tabs stay on top
       
       const tabsDiv = document.createElement('div');
       tabsDiv.className = 'event-months-tabs';
@@ -95,22 +96,27 @@ document.addEventListener('DOMContentLoaded', () => {
       // Inject some base styles for tabs
       const style = document.createElement('style');
       style.textContent = `
-        .event-months-tabs { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .event-months-tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
         .month-tab-btn { 
           background: transparent; 
           border: 1px solid var(--gold-light, #c8a250); 
           color: var(--ivory, #fff); 
-          padding: 8px 16px; 
+          padding: 6px 14px; 
           cursor: pointer; 
           font-family: inherit; 
-          font-size: 1rem;
+          font-size: 0.85rem;
+          letter-spacing: 0.04em;
           border-radius: 4px; 
           transition: 0.2s; 
-          display: inline-block;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+          min-height: 0;
           flex: 0 0 auto;
           width: auto;
-          min-height: auto;
-          line-height: 1;
+          line-height: 1.2;
+          white-space: nowrap;
         }
         .month-tab-btn:hover { background: rgba(200,162,80,0.2); }
         .month-tab-btn.active { 
@@ -121,7 +127,12 @@ document.addEventListener('DOMContentLoaded', () => {
         .event-months-content {
           display: grid;
           grid-template-columns: 1fr;
-          gap: 15px;
+          gap: 0.7rem;
+        }
+        @media (min-width: 700px) {
+          .event-months-content {
+            grid-template-columns: 1fr 1fr;
+          }
         }
       `;
       document.head.appendChild(style);

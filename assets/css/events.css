@@ -41,7 +41,7 @@
       margin-bottom: .65rem;
     }
 
-    .events-list { margin-top: 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
+    .events-list { margin-top: 1rem; }
     .event-item {
       border: 1px solid rgba(200,162,80,.14);
       border-radius: 8px;
@@ -187,7 +187,6 @@
 
     @media (max-width: 960px) {
       .grid { grid-template-columns: 1fr; }
-      .events-list { grid-template-columns: 1fr; }
       .catering-layout { grid-template-columns: 1fr; }
     }
 
