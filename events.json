@@ -1,44 +1,156 @@
 [
   {
-    "date": "Fri, Apr 24 2026 at 9 PM",
+    "date": "Fri, Apr 24 2026 at 9 PM",
     "parsedDate": "2026-04-25T01:00:00.000Z",
     "title": "DJ Night!",
     "description": "Join us at Giuseppe's for DJ Night!!",
-    "url": "https://www.facebook.com/events/2490220131436950/"
+    "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Sat, Apr 25 2026 at 6 PM",
+    "date": "Sat, Apr 25 2026 at 6 PM",
     "parsedDate": "2026-04-25T22:00:00.000Z",
     "title": "Evening of the Arts",
-    "description": "Join us at Giuseppe's for Evening of the Arts!",
+    "description": "Join us at Giuseppe's for Evening of the Arts! Live art, food, and drinks on the patio.",
     "url": "https://www.facebook.com/events/1448548360148572/"
   },
   {
-    "date": "Sat, Apr 25 2026 at 9 PM",
+    "date": "Sat, Apr 25 2026 at 9 PM",
     "parsedDate": "2026-04-26T01:00:00.000Z",
     "title": "Karaoke",
     "description": "Join us at Giuseppe's for Karaoke!",
-    "url": "https://www.facebook.com/events/1574983431014656/"
+    "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Fri, May 1 2026 at 9 PM",
+    "date": "Fri, May 1 2026 at 9 PM",
     "parsedDate": "2026-05-02T01:00:00.000Z",
     "title": "DJ Night!",
     "description": "Join us at Giuseppe's for DJ Night!!",
-    "url": "https://www.facebook.com/events/2490220131436951/"
+    "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Sat, May 2 2026 at 9 PM",
+    "date": "Sat, May 2 2026 at 9 PM",
     "parsedDate": "2026-05-03T01:00:00.000Z",
     "title": "Karaoke",
     "description": "Join us at Giuseppe's for Karaoke!",
-    "url": "https://www.facebook.com/events/1574983431014657/"
+    "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Mon, May 4 2026 at 7 PM",
-    "parsedDate": "2026-05-04T23:00:00.000Z",
+    "date": "Mon, May 4 2026 at 7 PM",
+    "parsedDate": "2026-05-05T00:00:00.000Z",
     "title": "Cinco De Drinko",
     "description": "Join us at Giuseppe's for Cinco De Drinko!",
-    "url": "https://www.facebook.com/events/1122334455667788/"
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Fri, May 8 2026 at 9 PM",
+    "parsedDate": "2026-05-09T01:00:00.000Z",
+    "title": "DJ Night!",
+    "description": "Join us at Giuseppe's for DJ Night!!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Sat, May 9 2026 at 9 PM",
+    "parsedDate": "2026-05-10T01:00:00.000Z",
+    "title": "Karaoke",
+    "description": "Join us at Giuseppe's for Karaoke!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Fri, May 15 2026 at 9 PM",
+    "parsedDate": "2026-05-16T01:00:00.000Z",
+    "title": "DJ Night!",
+    "description": "Join us at Giuseppe's for DJ Night!!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Sat, May 16 2026 at 9 PM",
+    "parsedDate": "2026-05-17T01:00:00.000Z",
+    "title": "Karaoke",
+    "description": "Join us at Giuseppe's for Karaoke!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Fri, May 22 2026 at 9 PM",
+    "parsedDate": "2026-05-23T01:00:00.000Z",
+    "title": "DJ Night!",
+    "description": "Join us at Giuseppe's for DJ Night!!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Sat, May 23 2026 at 9 PM",
+    "parsedDate": "2026-05-24T01:00:00.000Z",
+    "title": "Karaoke",
+    "description": "Join us at Giuseppe's for Karaoke!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Fri, May 29 2026 at 7 PM",
+    "parsedDate": "2026-05-29T23:00:00.000Z",
+    "title": "Bob D Returns!",
+    "description": "Live music on the patio at Giuseppe's. Join us for a great evening of food, drinks, and tunes.",
+    "url": "https://www.facebook.com/events/2074062296787449/"
+  },
+  {
+    "date": "Fri, May 29 2026 at 9 PM",
+    "parsedDate": "2026-05-30T01:00:00.000Z",
+    "title": "DJ Night!",
+    "description": "Join us at Giuseppe's for DJ Night!!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Sat, May 30 2026 at 9 PM",
+    "parsedDate": "2026-05-31T01:00:00.000Z",
+    "title": "Karaoke",
+    "description": "Join us at Giuseppe's for Karaoke!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Fri, Jun 5 2026 at 9 PM",
+    "parsedDate": "2026-06-06T01:00:00.000Z",
+    "title": "DJ Night!",
+    "description": "Join us at Giuseppe's for DJ Night!!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Sat, Jun 6 2026 at 9 PM",
+    "parsedDate": "2026-06-07T01:00:00.000Z",
+    "title": "Karaoke",
+    "description": "Join us at Giuseppe's for Karaoke!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Fri, Jun 12 2026 at 9 PM",
+    "parsedDate": "2026-06-13T01:00:00.000Z",
+    "title": "DJ Night!",
+    "description": "Join us at Giuseppe's for DJ Night!!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Sat, Jun 13 2026 at 9 PM",
+    "parsedDate": "2026-06-14T01:00:00.000Z",
+    "title": "Karaoke",
+    "description": "Join us at Giuseppe's for Karaoke!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Fri, Jun 19 2026 at 9 PM",
+    "parsedDate": "2026-06-20T01:00:00.000Z",
+    "title": "DJ Night!",
+    "description": "Join us at Giuseppe's for DJ Night!!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Sat, Jun 20 2026 at 9 PM",
+    "parsedDate": "2026-06-21T01:00:00.000Z",
+    "title": "Karaoke",
+    "description": "Join us at Giuseppe's for Karaoke!",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Fri, Jun 26 2026 at 9 PM",
+    "parsedDate": "2026-06-27T01:00:00.000Z",
+    "title": "DJ Night!",
+    "description": "Join us at Giuseppe's for DJ Night!!",
+    "url": "https://www.facebook.com/giuseppesri/events"
   }
 ]
