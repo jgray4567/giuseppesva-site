@@ -1,45 +1,36 @@
 [
   {
-    "date": "Fri, May 1 2026 at 9 PM",
-    "parsedDate": "2026-05-02T01:00:00.000Z",
-    "title": "DJ Night!",
-    "description": "Join us at Giuseppe's for DJ Night!!",
+    "date": "Thu, May 7 2026 at 9 PM",
+    "parsedDate": "2026-05-08T01:00:00.000Z",
+    "title": "DJ",
+    "description": "Join us at Giuseppe's for DJ Night!",
     "venue": "Giuseppe's Ristorante",
     "location": "Giuseppe's Ristorante",
     "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Sat, May 2 2026 at 9 PM",
-    "parsedDate": "2026-05-03T01:00:00.000Z",
-    "title": "Karaoke",
-    "description": "Join us at Giuseppe's for Karaoke!",
+    "date": "Fri, May 8 2026 at 8 PM",
+    "parsedDate": "2026-05-09T00:00:00.000Z",
+    "title": "Josh Allen Band",
+    "description": "Live music with the Josh Allen Band!",
     "venue": "Giuseppe's Ristorante",
     "location": "Giuseppe's Ristorante",
     "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Mon, May 4 2026 at 7 PM",
-    "parsedDate": "2026-05-04T23:00:00.000Z",
-    "title": "Cinco De Drinko",
-    "description": "Join us at Giuseppe's for Cinco De Drinko!",
+    "date": "Sat, May 9 2026 at 5 PM",
+    "parsedDate": "2026-05-09T21:00:00.000Z",
+    "title": "Big Country Show",
+    "description": "Live music with the Big Country Show! (5-8 PM)",
     "venue": "Giuseppe's Ristorante",
     "location": "Giuseppe's Ristorante",
     "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Fri, May 8 2026 at 9 PM",
-    "parsedDate": "2026-05-09T01:00:00.000Z",
-    "title": "DJ Night!",
-    "description": "Join us at Giuseppe's for DJ Night!!",
-    "venue": "Giuseppe's Ristorante",
-    "location": "Giuseppe's Ristorante",
-    "url": "https://www.facebook.com/giuseppesri/events"
-  },
-  {
-    "date": "Sat, May 9 2026 at 9 PM",
-    "parsedDate": "2026-05-10T01:00:00.000Z",
-    "title": "Karaoke",
-    "description": "Join us at Giuseppe's for Karaoke!",
+    "date": "Sat, May 9 2026 at 8 PM",
+    "parsedDate": "2026-05-10T00:00:00.000Z",
+    "title": "Emily Stedman",
+    "description": "Live music with Emily Stedman! (8-11 PM)",
     "venue": "Giuseppe's Ristorante",
     "location": "Giuseppe's Ristorante",
     "url": "https://www.facebook.com/giuseppesri/events"
