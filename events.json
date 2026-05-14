@@ -1,5 +1,14 @@
 [
   {
+    "date": "Thu, May 14 2026 at 5 PM",
+    "parsedDate": "2026-05-14T21:00:00.000Z",
+    "title": "DJ Night!",
+    "description": "Join us for DJ Night!",
+    "venue": "Giuseppe's Ristorante",
+    "location": "Giuseppe's Ristorante",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
     "date": "Thu, May 14 2026 at 9 PM",
     "parsedDate": "2026-05-15T01:00:00.000Z",
     "title": "DJ Night",
@@ -23,6 +32,15 @@
     "title": "Comedy Show",
     "description": "Comedy Show in the Dopo Ora Speakeasy",
     "venue": "Dopo Ora Speakeasy",
+    "location": "Giuseppe's Ristorante",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Sat, May 16 2026 at 5 PM",
+    "parsedDate": "2026-05-16T21:00:00.000Z",
+    "title": "Chipp Burg Live",
+    "description": "Join us for Chipp Burg Live",
+    "venue": "Giuseppe's Ristorante",
     "location": "Giuseppe's Ristorante",
     "url": "https://www.facebook.com/giuseppesri/events"
   },
@@ -99,8 +117,8 @@
     "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Sat, Jun 6 2026 at 8 PM",
-    "parsedDate": "2026-06-07T00:00:00.000Z",
+    "date": "Sat, Jun 6 2026 at 9 PM",
+    "parsedDate": "2026-06-07T01:00:00.000Z",
     "title": "Karaoke",
     "description": "Join us for Karaoke",
     "venue": "Giuseppe's Ristorante",
@@ -108,8 +126,8 @@
     "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Fri, Jun 12 2026 at 9 PM",
-    "parsedDate": "2026-06-13T01:00:00.000Z",
+    "date": "Fri, Jun 12 2026 at 8 PM",
+    "parsedDate": "2026-06-13T00:00:00.000Z",
     "title": "DJ Night!",
     "description": "Join us for DJ Night!",
     "venue": "Giuseppe's Ristorante",
@@ -126,8 +144,8 @@
     "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Fri, Jun 19 2026 at 9 PM",
-    "parsedDate": "2026-06-20T01:00:00.000Z",
+    "date": "Fri, Jun 19 2026 at 8 PM",
+    "parsedDate": "2026-06-20T00:00:00.000Z",
     "title": "DJ Night!",
     "description": "Join us for DJ Night!",
     "venue": "Giuseppe's Ristorante",
@@ -158,6 +176,15 @@
     "title": "Karaoke",
     "description": "Join us for Karaoke",
     "venue": "Giuseppe's Ristorante",
+    "location": "Giuseppe's Ristorante",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Tue, Jun 30 2026 at 5:30 PM",
+    "parsedDate": "2026-06-30T21:30:00.000Z",
+    "title": "Shane & Jackson & Aidan @ Giuseppe's Patio",
+    "description": "Join us for Shane & Jackson & Aidan @ Giuseppe's Patio",
+    "venue": "Giuseppe's Patio",
     "location": "Giuseppe's Ristorante",
     "url": "https://www.facebook.com/giuseppesri/events"
   },
@@ -230,15 +257,6 @@
     "title": "Karaoke",
     "description": "Join us for Karaoke",
     "venue": "Giuseppe's Ristorante",
-    "location": "Giuseppe's Ristorante",
-    "url": "https://www.facebook.com/giuseppesri/events"
-  },
-  {
-    "date": "Thu, Jul 30 2026 at 5:30 PM",
-    "parsedDate": "2026-07-30T21:30:00.000Z",
-    "title": "Shane & Jackson & Aidan @ Giuseppe's Patio",
-    "description": "Join us for Shane & Jackson & Aidan @ Giuseppe's Patio",
-    "venue": "Giuseppe's Patio",
     "location": "Giuseppe's Ristorante",
     "url": "https://www.facebook.com/giuseppesri/events"
   },
