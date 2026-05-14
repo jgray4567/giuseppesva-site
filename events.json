@@ -1,45 +1,54 @@
 [
   {
-    "date": "Thu, May 7 2026 at 9 PM",
-    "parsedDate": "2026-05-08T01:00:00.000Z",
-    "title": "DJ",
-    "description": "Join us at Giuseppe's for DJ Night!",
+    "date": "Thu, May 14 2026 at 9 PM",
+    "parsedDate": "2026-05-15T01:00:00.000Z",
+    "title": "DJ Night",
+    "description": "Join us for DJ Night!",
     "venue": "Giuseppe's Ristorante",
     "location": "Giuseppe's Ristorante",
     "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Fri, May 8 2026 at 8 PM",
-    "parsedDate": "2026-05-09T00:00:00.000Z",
-    "title": "Josh Allen Band",
-    "description": "Live music with the Josh Allen Band!",
+    "date": "Fri, May 15 2026 at 6 PM",
+    "parsedDate": "2026-05-15T22:00:00.000Z",
+    "title": "Steven Pugh & Jim",
+    "description": "Live music with Steven Pugh & Jim (6-9 PM)",
     "venue": "Giuseppe's Ristorante",
     "location": "Giuseppe's Ristorante",
     "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Sat, May 9 2026 at 5 PM",
-    "parsedDate": "2026-05-09T21:00:00.000Z",
-    "title": "Big Country Show",
-    "description": "Live music with the Big Country Show! (5-8 PM)",
+    "date": "Fri, May 15 2026 at 8 PM",
+    "parsedDate": "2026-05-16T00:00:00.000Z",
+    "title": "Comedy Show",
+    "description": "Comedy Show in the Dopo Ora Speakeasy",
+    "venue": "Dopo Ora Speakeasy",
+    "location": "Giuseppe's Ristorante",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Sat, May 16 2026 at 6 PM",
+    "parsedDate": "2026-05-16T22:00:00.000Z",
+    "title": "Chipp Burg Live",
+    "description": "Chipp Burg on the Porch (6-9 PM)",
+    "venue": "Giuseppe's Patio",
+    "location": "Giuseppe's Ristorante",
+    "url": "https://www.facebook.com/giuseppesri/events"
+  },
+  {
+    "date": "Sat, May 16 2026 at 9 PM",
+    "parsedDate": "2026-05-17T01:00:00.000Z",
+    "title": "Karaoke",
+    "description": "Join us for Karaoke Night!",
     "venue": "Giuseppe's Ristorante",
     "location": "Giuseppe's Ristorante",
     "url": "https://www.facebook.com/giuseppesri/events"
   },
   {
-    "date": "Sat, May 9 2026 at 8 PM",
-    "parsedDate": "2026-05-10T00:00:00.000Z",
-    "title": "Emily Stedman",
-    "description": "Live music with Emily Stedman! (8-11 PM)",
-    "venue": "Giuseppe's Ristorante",
-    "location": "Giuseppe's Ristorante",
-    "url": "https://www.facebook.com/giuseppesri/events"
-  },
-  {
-    "date": "Fri, May 15 2026 at 9 PM",
-    "parsedDate": "2026-05-16T01:00:00.000Z",
-    "title": "DJ Night!",
-    "description": "Join us at Giuseppe's for DJ Night!!",
+    "date": "Sun, May 17 2026 at 10:30 AM",
+    "parsedDate": "2026-05-17T14:30:00.000Z",
+    "title": "G's Cars & Coffee",
+    "description": "G's Cars & Coffee meetup",
     "venue": "Giuseppe's Ristorante",
     "location": "Giuseppe's Ristorante",
     "url": "https://www.facebook.com/giuseppesri/events"
