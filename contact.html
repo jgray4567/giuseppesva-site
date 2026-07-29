@@ -128,6 +128,10 @@
             </label>
             <button type="submit" class="submit-btn">Send Inquiry</button>
           </form>
+          <div id="form-success" style="display:none;background:#e8f5e9;border:1px solid #4caf50;border-radius:8px;padding:16px;margin-top:16px;text-align:center;">
+            <strong style="color:#2e7d32;font-size:1.1rem;">✓ Thank you!</strong>
+            <p style="margin:8px 0 0;color:#555;">Your message has been sent. We'll get back to you shortly.</p>
+          </div>
         </aside>
       </div>
 
@@ -163,6 +167,19 @@
       </a>
     </div>
   </footer>
+
+  <script>
+    // Show success message if redirected back with ?sent=1
+    if (new URLSearchParams(window.location.search).get('sent') === '1') {
+      var successEl = document.getElementById('form-success');
+      if (successEl) {
+        successEl.style.display = 'block';
+        successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      // Clear the URL param so it doesn't persist on refresh
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  </script>
 
   <script src="assets/js/contact.js"></script>
 </body>
