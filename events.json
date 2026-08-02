@@ -1,14 +1,5 @@
 [
   {
-    "date": "Fri, Jul 31 2026 at 9 PM",
-    "parsedDate": "2026-08-01T01:00:00.000Z",
-    "title": "DJ Night!",
-    "description": "Join us for DJ Night!",
-    "venue": "Giuseppe's Ristorante",
-    "location": "Giuseppe's Ristorante",
-    "url": "https://www.facebook.com/giuseppesri/events"
-  },
-  {
     "date": "Sat, Aug 1 2026 at 9 PM",
     "parsedDate": "2026-08-02T01:00:00.000Z",
     "title": "Karaoke",
